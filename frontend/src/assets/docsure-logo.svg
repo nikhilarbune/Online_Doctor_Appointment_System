@@ -1,0 +1,66 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Ground/Base line -->
+  <line x1="40" y1="130" x2="160" y2="130" stroke="#7CB342" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Left tree -->
+  <g>
+    <rect x="50" y="115" width="4" height="18" fill="#8B6F47"/>
+    <circle cx="52" cy="110" r="10" fill="#7CB342"/>
+  </g>
+  
+  <!-- Right tree -->
+  <g>
+    <rect x="146" y="115" width="4" height="18" fill="#8B6F47"/>
+    <circle cx="148" cy="110" r="10" fill="#7CB342"/>
+  </g>
+  
+  <!-- Hospital Building -->
+  <g>
+    <!-- Building base -->
+    <rect x="70" y="65" width="60" height="55" fill="#4A90A4" rx="2"/>
+    
+    <!-- Building outline -->
+    <rect x="70" y="65" width="60" height="55" fill="none" stroke="#2C5F7F" stroke-width="2" rx="2"/>
+    
+    <!-- Windows - Left column -->
+    <rect x="78" y="75" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="78" y="85" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="78" y="95" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="78" y="105" width="7" height="7" fill="#E8F4F8"/>
+    
+    <!-- Windows - Middle column -->
+    <rect x="92" y="75" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="92" y="85" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="92" y="95" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="92" y="105" width="7" height="7" fill="#E8F4F8"/>
+    
+    <!-- Windows - Right column -->
+    <rect x="106" y="75" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="106" y="85" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="106" y="95" width="7" height="7" fill="#E8F4F8"/>
+    <rect x="106" y="105" width="7" height="7" fill="#E8F4F8"/>
+    
+    <!-- Roof -->
+    <polygon points="70,65 100,50 130,65" fill="#E74C3C"/>
+    <polygon points="70,65 100,50 130,65" fill="none" stroke="#C0392B" stroke-width="1.5"/>
+    
+    <!-- Medical cross on roof -->
+    <g transform="translate(100, 57)">
+      <rect x="-3" y="-8" width="6" height="16" fill="white"/>
+      <rect x="-8" y="-3" width="16" height="6" fill="white"/>
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Door -->
+    <rect x="93" y="112" width="14" height="8" fill="#2C5F7F"/>
+    <circle cx="105" cy="116" r="1.5" fill="#FFD700"/>
+  </g>
+  
+  <!-- Text: DOCSURE -->
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2C5F7F">
+    DOCSURE
+  </text>
+</svg>
