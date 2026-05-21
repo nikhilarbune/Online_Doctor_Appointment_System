@@ -1,9 +1,10 @@
 {
     "version": 2,
-    "buildCommand": "pip install -r backend/requirements.txt && python backend/manage.py migrate",
+    "buildCommand": "pip install -r requirements.txt",
     "env": {
         "DJANGO_SETTINGS_MODULE": "config.settings",
-        "DEBUG": "False"
+        "DEBUG": "False",
+        "PYTHONPATH": "/vercel/path0/backend"
     },
     "functions": {
         "api/index.py": {
