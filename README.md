@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Online Doctor Appointment System
 
 A full-stack web application for booking doctor appointments online, built with Django REST Framework and React.
