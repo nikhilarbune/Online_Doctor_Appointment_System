@@ -56,3 +56,6 @@ dist/
 build/
 .next/
 out/
+
+__pycache__/
+*.pyc
