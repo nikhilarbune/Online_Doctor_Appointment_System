@@ -2,10 +2,11 @@ backend
 venv
 __pycache__
 *.pyc
-requirements.txt
 manage.py
 build.sh
 .venv
 frontend/node_modules
 frontend/dist
 lint-report
+api/
+db.sqlite3
