@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/dist",
+  "env": {
+    "VITE_API_URL": "https://online-doctor-appointment-system-2go1.onrender.com"
+  }
+}
