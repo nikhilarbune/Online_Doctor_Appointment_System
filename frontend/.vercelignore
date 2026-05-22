@@ -1,0 +1,7 @@
+backend/
+api/
+*.sqlite3
+.git
+.env.local
+requirements.txt
+build.sh
