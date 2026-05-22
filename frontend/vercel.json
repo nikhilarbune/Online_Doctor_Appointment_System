@@ -4,5 +4,9 @@
     "outputDirectory": "dist",
     "env": {
         "VITE_API_URL": "https://online-doctor-appointment-system-2go1.onrender.com"
-    }
+    },
+    "rewrites": [{
+        "source": "/(.*)",
+        "destination": "/index.html"
+    }]
 }
