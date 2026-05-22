@@ -34,6 +34,10 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['*']  # Allow all hosts for Vercel deployment
 
 
+
+# Templates directory
+TEMPLATES_DIR = BASE_DIR / 'templates'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -68,7 +72,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(TEMPLATES_DIR)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

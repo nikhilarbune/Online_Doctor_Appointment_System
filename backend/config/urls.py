@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import render
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
@@ -27,7 +28,12 @@ auth_urls = [
     path('me/', AuthViewSet.as_view({'get': 'me'}), name='me'),
 ]
 
+
+def home_view(request):
+    return render(request, 'home.html')
+
 urlpatterns = [
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('api/auth/', include(auth_urls)),
     path('api/', include(router.urls)),
