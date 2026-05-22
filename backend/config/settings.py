@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+
+import os
+if os.environ.get('DJANGO_SETTINGS_MODULE') != 'config.settings':
+    raise ImportError(f"DJANGO_SETTINGS_MODULE is set to '{os.environ.get('DJANGO_SETTINGS_MODULE')}'. It must be 'config.settings'. Please fix your Render environment settings and Procfile.")
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
