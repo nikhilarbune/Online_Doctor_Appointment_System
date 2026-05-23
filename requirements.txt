@@ -1,0 +1,2 @@
+# Empty requirements.txt - This is a Node.js/React project
+# Backend requirements are in backend/requirements.txt
