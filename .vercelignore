@@ -1,0 +1,14 @@
+backend/
+api/
+*.sqlite3
+*.pyc
+__pycache__
+*.log
+.pytest_cache
+.coverage
+htmlcov
+*.egg-info
+venv
+env
+build.sh
+requirements.txt
