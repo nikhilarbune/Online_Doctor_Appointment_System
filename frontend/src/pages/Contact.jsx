@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import api from '../api/axiosTemp';
+import api from '../api/axios';
 
 function Contact() {
   const [formData, setFormData] = useState({

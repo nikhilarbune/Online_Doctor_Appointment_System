@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import api from '../api/axiosTemp';
+import api from '../api/axios';
 
 function Services() {
   const [services, setServices] = useState([]);
