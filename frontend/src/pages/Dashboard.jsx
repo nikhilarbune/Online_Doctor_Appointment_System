@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import api from '../api/axios';
+import api from '../api/axios.jsx';
 
 function Dashboard() {
   const { user, isAuthenticated } = useContext(AuthContext);
