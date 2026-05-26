@@ -1,14 +1,14 @@
 backend/
 api/
-*.sqlite3
-*.pyc
+venv
 __pycache__
+*.pyc
+*.sqlite3
 *.log
 .pytest_cache
 .coverage
 htmlcov
 *.egg-info
-venv
 env
 build.sh
 requirements.txt
