@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import api from '../api/axios.jsx';
+import api from '../api/axios';
 
 function Home() {
   const [departments, setDepartments] = useState([]);
