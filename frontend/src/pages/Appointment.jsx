@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { ToastContext } from '../context/ToastContext';
-import api from '../api/axios.jsx';
+import api from '../api/axios.js';
 
 function Appointment() {
   const navigate = useNavigate();
