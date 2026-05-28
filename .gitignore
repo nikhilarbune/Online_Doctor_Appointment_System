@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -8,22 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node
+node_modules/
+/dist
+/dist-ssr
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-=======
 # Python
 __pycache__/
 *.py[cod]
@@ -50,7 +39,6 @@ wheels/
 *.egg
 
 # Django
-*.log
 local_settings.py
 db.sqlite3
 /media
@@ -71,18 +59,3 @@ db.sqlite3
 # OS
 .DS_Store
 Thumbs.db
-
-# Node
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Build
-dist/
-build/
-.next/
-out/
-
-__pycache__/
-*.pyc
->>>>>>> c3f87131bf00ab28db8b80e1d11e5ba9d6105011
