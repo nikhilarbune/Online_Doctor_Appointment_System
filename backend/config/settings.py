@@ -113,6 +113,9 @@ CORS_ALLOW_CREDENTIALS = True
 # CSRF trusted origins for Vercel frontend
 CSRF_TRUSTED_ORIGINS = [
     "https://online-doctor-appointment-system-three.vercel.app",
+    "https://online-doctor-appointment-system-gwfdfkehg.vercel.app",
+    "https://online-doctor-appointment-system-znarvdsr4.vercel.app",
+    "https://online-doctor-appointment-system-nikhil-arbunes-projects.vercel.app",
     "http://localhost:3000",
     "http://localhost:5173",
     "http://localhost:5174",
