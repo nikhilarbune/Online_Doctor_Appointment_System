@@ -74,7 +74,7 @@ class AppointmentAdmin(admin.ModelAdmin):
         'patient', 'doctor', 'department', 'appointment_date',
         'appointment_time', 'status', 'created_at'
     ]
-    list_filter = ['status', 'appointment_date', 'doctor', 'department']
+    list_filter = ['status', 'doctor', 'department', 'created_at']
     search_fields = ['patient__name', 'doctor__name', 'reason']
     date_hierarchy = 'appointment_date'
     readonly_fields = ['created_at', 'updated_at']
@@ -99,17 +99,17 @@ class AppointmentAdmin(admin.ModelAdmin):
     def confirm_appointment(self, request, queryset):
         updated = queryset.update(status='confirmed')
         self.message_user(request, f'{updated} appointment(s) confirmed.')
-    confirm_appointment.short_description = "✅ Confirm selected appointments"
+    confirm_appointment.short_description = "Mark selected appointments as Confirmed"
 
     def reject_appointment(self, request, queryset):
         updated = queryset.update(status='rejected')
         self.message_user(request, f'{updated} appointment(s) rejected.')
-    reject_appointment.short_description = "❌ Reject selected appointments"
+    reject_appointment.short_description = "Mark selected appointments as Rejected"
 
     def cancel_appointment(self, request, queryset):
         updated = queryset.update(status='cancelled')
         self.message_user(request, f'{updated} appointment(s) cancelled.')
-    cancel_appointment.short_description = "🗑️ Cancel selected appointments"
+    cancel_appointment.short_description = "Mark selected appointments as Cancelled"
 
 
 @admin.register(Service)
