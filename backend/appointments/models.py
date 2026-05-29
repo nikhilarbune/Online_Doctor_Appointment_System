@@ -151,3 +151,4 @@ class HospitalInfo(models.Model):
 
     class Meta:
         verbose_name = "Hospital Information"
+        verbose_name_plural = "Hospital Information"
